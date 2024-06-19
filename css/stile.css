@@ -1,0 +1,683 @@
+@font-face {
+    font-display: swap;
+    font-family: "Philosopher";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/philosopher-v19-latin-700.woff2") format("woff2");
+}
+@font-face {
+    font-display: swap;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2");
+}
+@font-face {
+    font-display: swap;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2");
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3 {
+    font-family: "Philosopher", sans-serif;
+}
+:root {
+    --bg-link-color: #150c01;
+    --bg-link-hover: #dc780b;
+    --bg-color: #ffffff;
+    --bg-background: #fbf1e7;
+    --bg-border-color: #0000001a;
+    --bg-testomonila-color: #000000;
+    --bg-contact-color: #fcf2e7;
+    --bg-footer-color: #252525;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    padding:  0 20px ;
+}
+/* header stile start */
+.site-header {
+    padding: 30px 0 16px;
+}
+.food-network-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.food-network-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.food-network-link {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    color: var(--bg-link-color);
+    transition: 0.3s all;
+}
+.food-network-link:hover {
+    font-weight: 500;
+    color: var(--bg-link-hover);
+}
+.food-network-btn {
+    width: 155px;
+    padding: 13.5px 30px;
+    background-color: var(--bg-link-hover);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    border-radius: 5px;
+    color: var(--bg-color);
+}
+.food-network-btn:active {
+    width: 165px;
+    background-color: var(--bg-color);
+    transition: 0.3s all;
+    color: var(--bg-link-hover);
+    border: 1.5px solid #dc780b;
+}
+/* header staling end */
+/* making section staling start */
+.section-wrapper {
+    padding-bottom: 115px;
+}
+.making-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.making-card {
+    width: 555px;
+}
+.card-title {
+    font-family: Philosopher;
+    font-size: 48.83px;
+    font-weight: 700;
+    line-height: 57.6px;
+    color: var(--bg-link-color);
+}
+.card-text {
+    margin-top: 42px;
+    font-style: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--bg-link-color);
+}
+.card-link-btn {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.link-order {
+    width: 158px;
+    padding: 20.5px 40px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    background-color: var(--bg-link-hover);
+    color: var(--bg-color);
+    border-radius: 5px;
+}
+.link-order:hover {
+    background-color: var(--bg-color);
+    transition: 0.3s all;
+    color: var(--bg-link-hover);
+    border: 1.5px solid #dc780b;
+}
+.link-food {
+    width: 171px;
+    padding: 20.5px 40px;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    color: var(--bg-link-hover);
+    border: 1.5px solid #dc780b;
+}
+.link-food:hover{
+    background-color: var(--bg-link-hover);
+    color: var(--bg-color);
+}
+/* making staling end */
+/* features staling start */
+.features-section {
+    padding-bottom: 123px;
+}
+.features-wrapper {
+    width: 100%;
+    text-align: center;
+}
+.features-content {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    letter-spacing: 0.2em;
+    color: var(--bg-link-hover);
+}
+.content-title {
+    margin-top: 7px;
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 35px;
+    color: var(--bg-link-color);
+}
+.content-list {
+    margin-top: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-item {
+    width: 300px;
+}
+.content--card {
+    width: 88px;
+    height: 88px;
+    margin-left: 106px;
+    border-radius: 50%;
+    position: relative;
+    background-color: var(--bg-background);
+}
+.card-img {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+}
+.features-card-content {
+    width: 300px;
+    text-align: center;
+}
+.features-card-subtitle {
+    margin-top: 33px;
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--bg-link-color);
+}
+.features-card-text {
+    margin-top: 15px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--bg-link-color);
+}
+/* features section end */
+/* marketing stayling start */
+.marketing-section {
+    padding-bottom: 115px;
+}
+.marketing-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 97px;
+}
+.marketing-content {
+    width: 488px;
+}
+.marketing-content-about {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    color: var(--bg-link-hover);
+}
+.content-title-food {
+    margin-top: 10px;
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 40.63px;
+    color: var(--bg-link-color);
+}
+.marketing-content-text {
+    margin-top: 30px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--bg-link-color);
+}
+.marketing-content-link {
+    width: 142px;
+    height: 42px;
+    display: inline-block;
+    margin-top: 29px;
+    padding: 11.5px 25px;
+    font-family: roboto-v30-latin-500;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: center;
+    background-color: var(--bg-link-hover);
+    border-radius: 5px;
+    color: var(--bg-color);
+    transition: 0.3s all;
+}
+.marketing-content-link:hover {
+    width: 150px;
+    font-weight: 400;
+    border: 1px solid var(--bg-link-color);
+    background-color: var(--bg-color);
+    color: var(--bg-link-hover);
+}
+/* marketing stayling end */
+/* menu stayling start */
+.menu-section {
+    padding-bottom: 185px;
+}
+.food-full {
+    text-align: center;
+}
+.menu-content {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    color: var(--bg-link-hover);
+}
+.menu-content-title {
+    margin-top: 9px;
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--bg-link-color);
+}
+.menu-content-text {
+    margin-top: 25px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--bg-link-color);
+}
+.menu-list {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-list + .menu-list {
+    margin-top: 30px;
+}
+.menu-item {
+    width: 360px;
+    border: 1px solid var(--bg-border-color);
+    border-radius: 75px 10px 10px 10px;
+}
+.food-name-price {
+    margin-top: 21px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.food-name {
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--bg-link-color);
+}
+.food-price {
+    font-family: Philosopher;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--bg-link-color);
+}
+.food-menu-text {
+    width: 310px;
+    margin-top: 20px;
+    padding: 0 25px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--bg-link-color);
+}
+.icon-vs-like {
+    margin-top: 20px;
+    padding: 0 25px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.food-menu-link {
+    width: 142px;
+    height: 42px;
+    margin: 50px 0 0 499px;
+    padding: 11.5px 25px;
+    display: inline-block;
+    border: 1px solid var(--bg-link-hover);
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    text-align: center;
+    color: var(--bg-link-hover);
+    transition: 0.4s all;
+}
+.food-menu-link:active {
+    width: 150px;
+    font-weight: 400;
+    line-height: 20px;
+    border-radius: 7px;
+    border: 1.5px solid var(--bg-color);
+    background-color: var(--bg-background);
+    color: var(--bg-border-color);
+}
+/* menu stayling end */
+/* product stayling start */
+.product-section {
+    width: 100%;
+    padding-bottom: 45px;
+    background-color: var(--bg-background);
+}
+.product-wrapper {
+    margin-left: 97px;
+    display: flex;
+    align-items: center;
+    gap: 128px;
+}
+.product-content {
+    width: 555px;
+}
+.product-take-away {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    color: var(--bg-link-hover);
+}
+.product-content-title {
+    margin-top: 5px;
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 40.63px;
+    color: var(--bg-link-color);
+}
+.product-content-text {
+    margin-top: 29px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--bg-link-color);
+}
+.google-play-card {
+    margin-top: 39px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.appstore-link {
+    padding: 11px 28px 9px;
+    display: flex;
+    align-items: center;
+    gap: 3.8px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    background-color: var(--bg-link-color);
+    color: var(--bg-color);
+    border-radius: 5px;
+    transition: 0.3s all;
+}
+.appstore-link:hover {
+    background-color: var(--bg-link-hover);
+    color: var(--bg-color);
+}
+.googleplay-link {
+    padding: 11px 28px 9px;
+    display: flex;
+    align-items: center;
+    gap: 3.8px;
+    text-align: center;
+    background-color: var(--bg-background);
+    border: 1.5px solid var(--bg-border-color);
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    color: var(--bg-link-color);
+}
+.googleplay-link:hover {
+    background-color: var(--bg-link-hover);
+    color: var(--bg-color);
+}
+.product-img {
+    margin-top: 56px;
+}
+/* product stayling end */
+/* testomonial stayling start */
+.testimonial-section {
+    padding: 213px 0 120px;
+}
+.testimonial-wrapper {
+    width: 750px;
+    margin-left: 217px;
+}
+.testimonial-content {
+    text-align: center;
+}
+.testimonial--blog {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    color: var(--bg-link-hover);
+}
+.testimonial-title {
+    margin-top: 12px;
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--bg-testomonila-color);
+}
+.testimonial-text {
+    margin-top: 23px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--bg-testomonila-color);
+}
+.testimonial--card {
+    width: 505px;
+    margin-left: 122px;
+    text-align: center;
+}
+.testimonial--card-img {
+    margin-top: 73px;
+}
+.testimonial--text {
+    margin: 42px 0 20px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--bg-testomonila-color);
+}
+.testimonial-icon {
+    display: block;
+    margin-left: 210px;
+    margin-bottom: 32px;
+}
+.content-name {
+    font-family: Roboto;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    color: var(--bg-testomonila-color);
+}
+.designer-content {
+    margin-top: 6px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    color: var(--bg-testomonila-color);
+}
+/* testomonial stayling end */
+/* contact stayling start */
+.contact-section {
+    padding: 115px 0 117px;
+    background-color: var(--bg-contact-color);
+}
+.contact-content {
+    width: 750px;
+    margin-left: 220px;
+    text-align: center;
+}
+.contact-wrapper {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    letter-spacing: 0.2em;
+    color: var(--bg-link-hover);
+}
+.conatact-title {
+    margin-top: 15px;
+    font-family: Philosopher;
+    font-size: 31.25px;
+    font-weight: 700;
+    line-height: 40.6px;
+    color: var(--bg-link-color);
+}
+.contact-form {
+    margin-top: 46px;
+    position: relative;
+}
+.contact-form > input {
+    width: 100%;
+    height: 75px;
+    /* position: relative; */
+    padding: 32px 32px 32px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40.6px;
+    color: var(--bg-testomonila-color);
+    border-radius: 10px;
+    border: none;
+    background-color: var(--bg-color);
+}
+.contact-form-btn {
+    width: 156px;
+    height: 75px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--bg-link-hover);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40.6px;
+    text-align: center;
+    color: var(--bg-color);
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s all;
+}
+.contact-form-btn:hover {
+    cursor: pointer;
+    background-color: var(--bg-color);
+    color: var(--bg-link-hover);
+    border: 1.5px solid var(--bg-border-color);
+}
+/* contact stayling start */
+/* footer stayling start */
+.footer-content {
+    padding: 137px 0 104px;
+    background-color: var(--bg-footer-color);
+}
+.footer-wrapper {
+   /*  margin-top: 137px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.address-list {
+    margin-top: 25px;
+}
+.address-item + .address-item {
+    margin-top: 17px;
+}
+.address-link {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    color: var(--bg-color);
+}
+.footer-home-content {
+    font-family: Philosopher;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.16px;
+    color: var(--bg-color);
+}
+.footer-home--list {
+    margin-top: 26px;
+}
+.footer-home--item + .footer-home--item {
+    margin-top: 20px;
+}
+.home-item--link {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    color: var(--bg-color);
+}
+.footer--social-mediaaa{
+  margin-top:25px ;
+}
+.footer--social {
+   /*  margin-top: 25px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* footer stayling start */
